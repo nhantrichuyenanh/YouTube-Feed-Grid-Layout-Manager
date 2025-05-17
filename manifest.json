@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Feed Grid Layout Manager",
+  "version": "0.0.1",
+  "description": "Customize YouTube homepage, subscription and channel: videos, playlist, live grid layout to your preference.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "permissions": [
+    "storage",
+    "https://www.youtube.com/*/videos",
+    "https://www.youtube.com/*/playlists",
+    "https://www.youtube.com/*/streams",
+    "https://www.youtube.com/feed/subscriptions*"
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"]
+    }
+  ]
+}

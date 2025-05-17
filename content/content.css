@@ -1,0 +1,40 @@
+.yt-grid-columns-2 ytd-rich-item-renderer {
+    width: 50% !important;
+}
+
+.yt-grid-columns-3 ytd-rich-item-renderer {
+    width: 33.33% !important;
+}
+
+.yt-grid-columns-4 ytd-rich-item-renderer {
+    width: 25% !important;
+}
+
+.yt-grid-columns-5 ytd-rich-item-renderer {
+    width: 20% !important;
+}
+
+.yt-grid-columns-6 ytd-rich-item-renderer {
+    width: 16.66% !important;
+}
+
+.yt-grid-active ytd-rich-grid-renderer {
+    --ytd-rich-grid-items-per-row: auto !important;
+}
+
+.yt-grid-active ytd-rich-grid-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+}
+
+/* fix for the gap between videos and scrollbar */
+.yt-grid-active #contents.ytd-rich-grid-renderer {
+    overflow: visible !important;
+}
+
+/* ensure proper spacing between items */
+.yt-grid-active ytd-rich-item-renderer {
+    margin: 0 !important;
+    padding: 0 8px 24px !important;
+    box-sizing: border-box !important; }
